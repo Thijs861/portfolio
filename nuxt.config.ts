@@ -5,6 +5,17 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  app: {
+    head: {
+      title: 'Thijs.dev',
+      htmlAttrs: {
+        lang: 'en',
+      },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
+  },
   css: [path.resolve(__dirname, "assets/css/main.css")],
   vite: {
     plugins: [
