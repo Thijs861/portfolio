@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.bungee {
+    font-family: "Bungee", sans-serif;
+};
+
+.roboto-mono {
+    font-family: "Roboto Mono", sans-serif;
+}
