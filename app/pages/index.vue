@@ -16,11 +16,11 @@
       <p class="text-2xl font-bold text-gray-300 roboto">Build whatever comes to mind ✨</p>
       <div class="flex space-x-2 justify-center mt-10">
         <a href="https://github.com/Thijs861">
-          <img class="w-10 h-auto" src="/icons/git-ico/github-mark-white.png" target="_blank" alt="Github icon">
+          <img class="w-10 h-auto" src="/icons/git-ico/Github.png" target="_blank" alt="Github icon">
         </a>
-        <!-- <a href="https://www.figma.com/@Thijsvw">
-          <img class="w-10 h-auto" src="/icons/fig-ico/icons8-figma-100.png" alt="Figma icon">
-        </a> -->
+        <a href="https://www.figma.com/@Thijsvw">
+          <img class="w-10 h-auto" src="/icons/fig-ico/Figma.png" alt="Figma icon">
+        </a>
       </div>
     </div>
   </section>
