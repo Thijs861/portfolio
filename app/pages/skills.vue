@@ -1,28 +1,61 @@
+<script setup>
+
+// Skills data template.
+// Git, Vue, Tailwind
+const skills = [
+ {
+  name: 'Nuxt',
+  sub: 'Framework',
+  icon: '',
+  alt: 'Nuxt icon'
+ },
+ {
+  name: 'Node',
+  sub: 'Framework',
+  icon: '/icons/frameworks/node-ico.png',
+  alt: 'Node icon'
+ },
+ {
+  name: 'Git', 
+  sub: 'Tool',
+  icon: '/icons/frameworks/git-ico.png',
+  alt: 'Git icon'
+ },
+ {
+  name: 'TailwindCSS',
+  sub: 'Styling',
+  icon: '',
+  alt: 'Tailwind icon'
+ },
+ {
+  name: 'Python',
+  sub: 'Internal scripts',
+  icon: '/icons/frameworks/python-ico.png',
+  alt: 'Python icon'
+ },
+ {
+  name: 'Vue',
+  sub: 'Framework',
+  icon: '',
+  alt: 'Vue icon'
+ }
+]
+</script>
+
 <template>
-    <section class="max-w-5xl mx-auto space-y-6 py-10 px-4 text-gray-300">
-      <h2 class="text-3xl font-bold text-white">Skills</h2>
-      <p class="text-gray-400">
-        Some of my favorite technologies to use for projects!
-      </p>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-        <div class="flex items-center justify-center p-6 rounded-xl bg-[#2a2a2a] border border-[#333] hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-200 shadow-md">
-          <p class="font-medium">Tailwind CSS</p>
-        </div>
-        <div class="flex items-center justify-center p-6 rounded-xl bg-[#2a2a2a] border border-[#333] hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-200 shadow-md">
-          <p class="font-medium">React</p>
-        </div>
-        <div class="flex items-center justify-center p-6 rounded-xl bg-[#2a2a2a] border border-[#333] hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-200 shadow-md">
-          <p class="font-medium">JavaScript</p>
-        </div>
-        <div class="flex items-center justify-center p-6 rounded-xl bg-[#2a2a2a] border border-[#333] hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-200 shadow-md">
-          <p class="font-medium">Python</p>
-        </div>
-        <div class="flex items-center justify-center p-6 rounded-xl bg-[#2a2a2a] border border-[#333] hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-200 shadow-md">
-          <p class="font-medium">Node.js</p>
-        </div>
-        <div class="flex items-center justify-center p-6 rounded-xl bg-[#2a2a2a] border border-[#333] hover:bg-[#3a3a3a] hover:scale-105 transition-all duration-200 shadow-md">
-          <p class="font-medium">Git</p>
+  <section class="max-w-5xl mx-auto py-10 px-4 text-gray-300">
+    <h2 class="text-3xl font-bold text-white mb-1">Skills</h2>
+    <p class="text-gray-400">
+      Some of my favorite technologies to use for projects!
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3  gap-6 mt-10">
+      <div v-for="(skill, index) in skills" :key="index" class="flex items-center px-6 py-4 rounded-xl space-x-2 bg-[#2a2a2a] border border-[#333] shadow-md">
+        <img class="w-10" :src="skill.icon" :alt="skill.alt">
+        <div>
+          <p class="font-medium text-lg">{{ skill.name }}</p>
+          <p class="font-medium text-gray-400 text-sm">{{ skill.sub }}</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
