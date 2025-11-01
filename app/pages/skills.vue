@@ -1,30 +1,29 @@
 <script setup>
 
 // Skills data template.
-// Git, Vue, Tailwind
 const skills = [
  {
   name: 'Nuxt',
-  sub: 'Framework',
-  icon: '',
+  sub: 'Full stack framework for Vue.',
+  icon: '/icons/frameworks/nuxt-ico.png',
   alt: 'Nuxt icon'
  },
  {
   name: 'Node',
-  sub: 'Framework',
+  sub: 'Server side scripting',
   icon: '/icons/frameworks/node-ico.png',
   alt: 'Node icon'
  },
  {
   name: 'Git', 
-  sub: 'Tool',
+  sub: 'Version control',
   icon: '/icons/frameworks/git-ico.png',
   alt: 'Git icon'
  },
  {
   name: 'TailwindCSS',
-  sub: 'Styling',
-  icon: '',
+  sub: 'Utility-first styling',
+  icon: '/icons/frameworks/tailwind-ico.png',
   alt: 'Tailwind icon'
  },
  {
@@ -35,21 +34,21 @@ const skills = [
  },
  {
   name: 'Vue',
-  sub: 'Framework',
-  icon: '',
+  sub: 'UI component framework',
+  icon: '/icons/frameworks/vue-ico.png',
   alt: 'Vue icon'
  }
 ]
 </script>
 
 <template>
-  <section class="max-w-5xl mx-auto py-10 px-4 text-gray-300">
-    <h2 class="text-3xl font-bold text-white mb-1">Skills</h2>
-    <p class="text-gray-400">
+  <section class="py-10 text-gray-300">
+    <h2 class="text-3xl pb-1 bungee">Skills</h2>
+    <p class="text-gray-400 roboto">
       Some of my favorite technologies to use for projects!
     </p>
-    <div class="grid grid-cols-1 md:grid-cols-3  gap-6 mt-10">
-      <div v-for="(skill, index) in skills" :key="index" class="flex items-center px-6 py-4 rounded-xl space-x-2 bg-[#2a2a2a] border border-[#333] shadow-md">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+      <div v-for="(skill, index) in skills" :key="index" class="flex items-center px-6 py-4 rounded-xl space-x-3 bg-[#2a2a2a] border border-[#333] shadow-md">
         <img class="w-10" :src="skill.icon" :alt="skill.alt">
         <div>
           <p class="font-medium text-lg">{{ skill.name }}</p>
