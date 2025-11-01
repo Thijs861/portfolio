@@ -18,6 +18,9 @@ logs
 .fleet
 .idea
 
+# Custom Folders
+working_on
+
 # Local env files
 .env
 .env.*
