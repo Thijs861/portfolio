@@ -7,7 +7,7 @@
     <div class="text-center">
 
       <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-[9rem] font-bold mb-4 text-gray-200 bungee leading-tight text-center">
-        <TxtRotate :phrases='["Thijs.dev", "Programmer", "UI/UX Designer", "Problem solver"]' :period="1500" />
+        <TxtRotate :phrases='["ThijsVW.dev", "Programmer", "UI/UX Designer", "Problem solver"]' :period="1500" />
       </h1>
       <p class="text-base sm:text-lg md:text-2xl font-medium text-gray-300 roboto text-center max-w-xl mx-auto">Build whatever comes to mind ✨</p>
 
