@@ -28,7 +28,7 @@ const skills = [
  },
  {
   name: 'Python',
-  sub: 'Internal scripts',
+  sub: 'General-purpose programming',
   icon: '/icons/frameworks/python-ico.png',
   alt: 'Python icon'
  },
@@ -37,12 +37,24 @@ const skills = [
   sub: 'UI component framework',
   icon: '/icons/frameworks/vue-ico.png',
   alt: 'Vue icon'
+ },
+ {
+  name: 'Vite',
+  sub: 'Build tool for front-end projects',
+  icon: '/icons/frameworks/vite-ico.png',
+  alt: 'Vite icon'
+ },
+ {
+  name: 'Laravel',
+  sub: 'Building large scale applications & APIs',
+  icon: '/icons/frameworks/laravel-ico.png',
+  alt: 'Laravel icon'
  }
 ]
 </script>
 
 <template>
-  <section class="py-10 text-gray-300">
+  <section class="py-20 text-gray-300">
     <h2 class="text-3xl pb-1 bungee">Skills</h2>
     <p class="text-gray-400 roboto">
       Some of my favorite technologies to use for projects!
