@@ -6,14 +6,14 @@
       },
     });
 
-    // useSeoMeta({
-    // title: 'Thijs.dev',
-    // ogTitle: 'Thijs.dev',
-    // description: '',
-    // ogDescription: '',
-    // ogImage: '',
-    // twitterCard: '',
-    // });
+    useSeoMeta({
+    title: 'Thijsvw.dev',
+    ogTitle: 'Thijsvw.dev',
+    description: 'Full stack developer passionate about building applications usuable for users & developers.',
+    ogDescription: 'Full stack developer passionate about building applications usuable for users & developers.',
+    ogImage: '',
+    twitterCard: '',
+    });
     
   </script>
 
